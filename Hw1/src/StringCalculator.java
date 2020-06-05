@@ -71,10 +71,16 @@ public class StringCalculator {
 			    	//System.out.println("Index = " + index);
 			    	double operand1 = Double.valueOf(s.substring(0,index));
 			    	double operand2 = Double.valueOf(s.substring(index+1,s.length()));
-			    	
-			    	double division = StringCalculator.divide(operand1,operand2);
-			    	System.out.printf("%8.2f / %8.2f = %8.2f\n", operand1, operand2, division);
-			    	//System.out.println(operand1 + " / " + operand2 + " = " + division);
+			    	if (operand2 != 0)
+			    	{
+			    		double division = StringCalculator.divide(operand1,operand2);
+			    		System.out.printf("%8.2f / %8.2f = %8.2f\n", operand1, operand2, division);
+			    		//System.out.println(operand1 + " / " + operand2 + " = " + division);
+			    	}
+			    	else
+			    	{
+			    		System.out.println("Error: divide by zero");
+			    	}
 			    }
 			    else 
 			    {
@@ -88,3 +94,5 @@ public class StringCalculator {
 	}
 
 
+
+		
