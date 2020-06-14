@@ -88,6 +88,7 @@ public class StringCalculator {
 			    	System.out.println("quit");
 			    }
 			} while (quit==false);
+			sc.close();
 		    return;
 		}		
 

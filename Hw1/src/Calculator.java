@@ -85,6 +85,7 @@ public class Calculator {
 			sc = new Scanner(System.in);
 			s = sc.nextLine();
 		}
+		sc.close();
 	    return;
 	}
 
